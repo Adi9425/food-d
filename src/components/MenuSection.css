@@ -1,0 +1,159 @@
+.menu-section {
+  padding: 32px 16px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.menu-header {
+  margin-bottom: 32px;
+}
+
+.menu-discover {
+  font-size: 24px;
+  color: #e63946; /* Decorative red color */
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.menu-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.menu-description {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.menu-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure categories wrap on smaller screens */
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.menu-category {
+  padding: 8px 16px;
+  border: 1px solid #e63946;
+  background-color: transparent;
+  color: #e63946;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.menu-category.active,
+.menu-category:hover {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusts automatically for smaller screens */
+  gap: 16px;
+}
+
+.menu-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.menu-card h4 {
+  font-size: 18px;
+  margin: 16px 0;
+}
+
+.menu-card p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.menu-card span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e63946;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .menu-title {
+      font-size: 32px;
+  }
+
+  .menu-description {
+      font-size: 16px;
+  }
+
+  .menu-card {
+      padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-title {
+      font-size: 28px;
+  }
+
+  .menu-categories {
+      gap: 12px;
+  }
+
+  .menu-category {
+      padding: 6px 12px;
+      font-size: 14px;
+  }
+
+  .menu-card h4 {
+      font-size: 16px;
+  }
+
+  .menu-card span {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-title {
+      font-size: 24px;
+  }
+
+  .menu-description {
+      font-size: 14px;
+  }
+
+  .menu-card {
+      padding: 8px;
+  }
+
+  .menu-card h4 {
+      font-size: 14px;
+  }
+
+  .menu-card span {
+      font-size: 12px;
+  }
+}
